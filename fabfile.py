@@ -120,7 +120,7 @@ def lab():
     env.dashboard = '/srv/%(name)s/magneto/dashboard/' % env
     env.impressions = '/srv/%(name)s/magneto/impressions/' % env
     env.emails = '/srv/%(name)s/magneto/emails/' % env
-    env.git_path = 'https://github.com/innovation-labs/Vader.git'
+    env.git_path = 'git@github.com:innovation-labs/Vader.git'
 
     if confirm(red('You are about to deploy on live servers, Do you want to continue?'), default=False):
         print(red('You selected continue ....'))
