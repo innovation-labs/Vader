@@ -245,9 +245,9 @@ def clone():
     """
     env.run("sudo mkdir %(project_root)s" % env)
     env.run("sudo chown -R ec2-user:ec2-user %(project_root)s" % env)
-    git_path = getattr(env.git_path)
+    git_path = getattr(env, 'git_path')
     if git_path:
-        env.run("git glone --recursive %(git_path)s %(project_root)s" %env)
+        env.run("git clone --recursive %(git_path)s %(project_root)s" %env)
     else:
         env.run("git clone --recursive git@github.com:intentaware/Vader.git %(project_root)s" % env)
 
