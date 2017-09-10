@@ -1,6 +1,6 @@
 [submodule "magneto"]
   path = magneto
-  url = git@github.com:intentaware/magneto.git
+  url = git@github.com:innovation-labs/magneto.git
   branch = develop
 	ignore = dirty
   fetchRecurseSubmodules = true
