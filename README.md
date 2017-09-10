@@ -105,6 +105,8 @@ The usual, update your local settings file, located at
 adomattic/settings/local.py
 ```
 
+for furthur automation, do check fabric's fabfile.py
+
 It should be already be populated with some default variables, update it according to your needs.
 Some word. Go look at base.py to understand how we are doing the configuration.
 
