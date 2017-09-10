@@ -6,8 +6,8 @@ SITE_ID = 1
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '.intentaware.com',  # Allow domain and subdomains
-    '.intentaware.com.',  # Also allow FQDN and subdomains
+    '.innovationlabs.online',  # Allow domain and subdomains
+    '.innovationlabs.online.',  # Also allow FQDN and subdomains
 ]
 
 BASE_URL = "http://innovationlabs.online"
