@@ -86,7 +86,7 @@ It is assumed that you have node installed, and gulp/bower commands available lo
 If not, do ```npm i -g gulp bower``` and then.
 
 ```bash
-fab live setup_magneto
+fab local setup_magneto
 ```
 
 **THIS COMMAND TAKES A _LOT_ OF TIME WHEN YOU RUN IT THE FIRST TIME**
@@ -133,6 +133,7 @@ It is absolutely imperative that this is inherited everywhere when making a new 
 Some helper commands
 
 ```bash
+uwsgi adomattic/conf/<env>/uwsgi/wsgi.ini
 psql --host=vader.c3udwfzrnadp.us-west-2.rds.amazonaws.com --port=5432 --username=vader --password --dbname=vader
 psql --host=vader.c3udwfzrnadp.us-west-2.rds.amazonaws.com --port=5432 --username=vader --password --dbname=vader \copy (Select * From impressions_impression) To '~/test.csv' With CSV
 ```
