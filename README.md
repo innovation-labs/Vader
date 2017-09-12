@@ -4,7 +4,7 @@
 # Lets get the show on the road
 
 ## Pre Requisites
-make sure you have these packages on your system
+make sure you have these packages on your system.
 
 1. node & npm
 2. postgres 9.4 (important, 9.4 is version is a must)
