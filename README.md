@@ -1,16 +1,19 @@
-# Whats with the name?
+# Whats with the name
+
 **Force Choke**, *'I find your lack of faith disturbing!'*
 
 # Lets get the show on the road
 
 ## Pre Requisites
+
 make sure you have these packages on your system.
 
 1. node & npm
-2. postgres 9.4 (important, 9.4 is version is a must)
-3. gulp & bower (npm install -g gulp bower)
+1. postgres 9.4 (important, 9.4 is version is a must)
+1. gulp & bower (npm install -g gulp bower)
 
 ## Setting your development environment
+
 You know virtualenv, right? MAKE ONE and switch to it!
 
 ```bash
@@ -28,8 +31,6 @@ LOCAL_PROJECT_PATH = 'your local project path'
 LOCAL_ENVIRONMENT_PATH = 'you virtual environment path'
 ```
 
-
-
 one you have this set up, this is the magic command you run first before you can tame this monster
 
 ```bash
@@ -38,6 +39,7 @@ fab local prepare
 ```
 
 ## The GIT branching structure
+
 best that we follow the `git flow` model. Branches and their roles are as follow
 
 - `master` > major releases, tagged by version number. version number is YY.MM.DD
@@ -78,8 +80,8 @@ everything frontend related is managed through a seperate submodule [magneto](ht
 with each function of ui having a seperate folder e.g
 
 1. dashboard > everything related to dashboard
-2. emails > to generate email friendly templates
-3. impressions > manages pixel for client side that gathers us the data or display our ad.
+1. emails > to generate email friendly templates
+1. impressions > manages pixel for client side that gathers us the data or display our ad.
 
 to watch the static files while working on dashboard, we would need gulp with browser-sync which proxies django local development server. Do this in a seperate terminal/console window
 It is assumed that you have node installed, and gulp/bower commands available locally. If you have followed the instructions above, node with gulp and bower should be available to you at this point.
@@ -135,7 +137,9 @@ It is absolutely imperative that this is inherited everywhere when making a new 
 Some helper commands
 
 ```bash
+
 uwsgi adomattic/conf/<env>/uwsgi/wsgi.ini
 psql --host=vader.c3udwfzrnadp.us-west-2.rds.amazonaws.com --port=5432 --username=vader --password --dbname=vader
 psql --host=vader.c3udwfzrnadp.us-west-2.rds.amazonaws.com --port=5432 --username=vader --password --dbname=vader \copy (Select * From impressions_impression) To '~/test.csv' With CSV
+
 ```
