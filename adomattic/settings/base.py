@@ -251,7 +251,7 @@ STRIPE_KEY = 'sk_live_ykBdrWZnCW4YddbDDxrwm0dm'
 
 # GRAPPELLI SETTINGS
 # GRAPPELLI_ADMIN_TITLE = 'IntentAware Administration Console'
-ADMIN_SITE_HEADER = 'IntentAware Administration Console'
+ADMIN_SITE_HEADER = 'Innovation Labs Administration Console'
 
 # MAX MIND GEO IP2 Database File Root
 MAXMIND_DB_ROOT = os.path.join(CONF_DIR, 'ipdb')
