@@ -281,7 +281,7 @@ US_CENSUS_DB = {
     'PORT': '5432',
 }
 
-# Mocking IP for simulating census data
+# We might need more IPs
 # Canada
 CENSUS_MOCK_IP = '70.25.55.241'
 # USA
