@@ -43,7 +43,7 @@ class CaCensus(object):
                 """.format(geocode=geocode)
             self.cursor.execute(query)
             results = self.cursor.fetchall()
-            if len(results):
+            if results:
                 for row in results:
                     if 'population by age' in row[3]:
                         doc['total'] = row[4]
@@ -80,11 +80,11 @@ class CaCensus(object):
 
             results = self.cursor.fetchall()
 
-        for row in results:
-            if 'Average' in row[2]:
-                income = row[3]
+        if results:
+            for row in results:
+                if 'Average' in row[2]:
+                    income = row[3]
 
-        print income
         if not income:
             income = 0
         else:
